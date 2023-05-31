@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oooh+Baby&family=Zeyada&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;;
+}
+.backgrounding
+{
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Image/Background.img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  /* --  Sri Lankan Turtle Population-- */
+.main-popu-para
+{
+  margin: 15px 40px;
+}
+.population 
+  {
+      width: 100%;
+      padding: 60px 0 0 0;
+      overflow: hidden;
+  }
+  
+  .population1
+  {
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular";
+    text-align: center;
+    font-size: 32px;
+  }
+    
+  .population2 
+  {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      color: black;
+      font-size: 14px;
+  }
+.population3
+{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+  /* -- Three Section with Photos and Discription-- */
+
+  .discription {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+}
+  
+  @media (min-width: 576px) {
+    .discription {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .discription {
+      max-width: 720px;
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .discription {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .discription {
+      max-width: 1140px; } }
+       
+      .discription1 .discription2 .content-single-title h3 {
+        font-size: 32px;
+      }
+      
+       .discription1 .discription2 .content-single-body {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #eee;
+      }
+      
+       .discription2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-right: 2px solid #eee;
+      }
+      
+       .discription2 .discription3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 420px) {
+       .discription2 .discription3 {
+          flex-wrap: wrap;
+        }
+      }
+      
+      .discription2 .discription-img {
+        width: 70%;
+        position: relative;
+        padding-bottom: 280px;
+      }
+      @media (max-width: 420px) {
+       .discription2 .discription-img {
+          width: 100%;
+        }
+      }
+      
+       .discription2 .discription-img img {
+        width: 100%;
+        display: block;
+        height: 260px;
+        object-position: center;
+        object-fit: cover;
+        position: absolute;
+      }
+      
+      .discription2 .discription-img span {
+        color: white;
+        border-radius: 50px;
+        position: absolute;
+        margin: 20px;
+        padding: 8px 30px;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      @media (max-width: 420px) {
+        .discription2 .discription-img img {
+          position: static;
+        }
+       .discription2 .discription-img span {
+          display: none;
+        }
+      }
+      
+      .discription2 .discription4 {
+        width: 140%;
+        padding: 0 20px;
+      }
+      @media (max-width: 420px) {
+        .discription2 .discription4 {
+          width: 100%;
+          position: static;
+          clear: both;
+        }
+      }
+      
+      .discription2 .discription4 p {
+        color: black;
+        font-size: 15px;
+      }
+      
+       .discription2 .discription4 h3 {
+        font-size: 30px;
+        color:black;
+        padding-bottom: 12px;
+        text-transform: uppercase;
+        font-family: "Montserrat-Regular";
+        text-align: center;
+      }
+
+/* -- Section Bullet Point List Turtle Categories -- */
+
+*
+.bullet-point-list 
+{
+    margin-top: 60px;
+    background: url("../Image/Image\ under\ Bullet\ points.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 82vh;
+    position: relative;
+}
+  
+.bullet-point-list .bp-list 
+{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.bullet-point-list .bp-list .bp-list1 
+{
+    width: 100%;
+}
+  
+.bullet-point-list .bp-list .bp-list1 h2 
+{
+    text-transform: uppercase;
+    font-family: "Montserrat-Medium";
+}
+  
+.bullet-point-list .bp-list .bp-list1 img 
+{
+    width: 65%;
+}
+@media (max-width: 420px) 
+{
+.bullet-point-list 
+{
+    height: 40vh;
+}
+.bullet-point-list .bp-list .bp-list1 img 
+{
+    width: 90%;
+}
+}
+
+.bpl-head
+{
+  padding-bottom: 50px;
+}
+
+.bpl-head1 {
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+.bpl-head2 {
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular";
+  text-align: center;
+  font-size: 36px;
+}
+
+.bpl-head3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.list
+{
+    font-size: 26px;
+}
+
+.list1
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.list1 li
+{
+  margin: 12px;
+}
+
+/* -- Intresting Facts Section Numbered Point List -- */
+
+.Intrest
+{
+  padding-bottom: 20px;
+}
+.Intrest2 {
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular";
+  text-align: center;
+  font-size: 32px;
+}
+
+.Intrest1 {
+  width: 80px;
+  height: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.Intrest4
+{
+  padding-left: 65px; 
+}
+
+/* -- Section Testi -- */
+
+.Tourist {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.Tourist  {
+  padding: 100px;
+  background-image: linear-gradient(rgb(0,0,0,0.72),rgba(0,0,0,0.75)),url(../Image/Image\ under\ quote.jpg);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+@media (max-width: 420px) {
+  .Tourist {
+    padding: 40px 20px;
+  }
+}
+
+.Tourist h3 {
+  font-family: "Pacifico";
+  font-size: 32px;
+  color: white;
+  display: block;
+  text-transform: uppercase;
+}
+
+.Tourist .Tourist-quote
+{
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oooh+Baby&family=Zeyada&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* -- Navbar */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+.logo{
+    width: 120px;
+    margin-top: 8px;
+    position: sticky;
+}
+nav .logo{
+    display: none;
+
+}
+.navbar
+{
+    width: 100%;
+    margin:auto;
+    padding: 7px 16px ;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    height: 80px;
+    position: sticky;
+}
+
+.logo1
+{
+    width: 96px;
+    cursor: pointer;
+    padding: 0 60px;
+    line-height: 80px;
+}
+
+.navbar .navul
+{
+    float: right;
+    margin-right: 20px;
+}
+.navbar .navul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 12px;
+    position: relative;
+}
+
+.navbar .navul li a
+{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    padding: 4px 10px;
+}
+
+@media (max-width:952px)
+{
+    label.logo1
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .navbar .navul li a 
+    {
+        font-size: 16px;
+        margin: 15px 70px;
+    }
+}
+
+a.active,a :hover
+{
+    background: black;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+}
+
+a.active,a :hover
+{
+    background: none;
+    color: #0077B6;
+}
+
+.navbar .navul li a::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #03045E;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar .navul li a:hover::after
+{
+    width: 100%;
+}
+
+.navbar .navul li ul.dropdown li
+{
+    display: block;
+    padding: 10px;
+}
+
+.navbar .navul li ul.dropdown
+{
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 8px;
+}
+
+.navul li:hover ul.dropdown
+{
+    display: block;
+}
+
+nav .logo{
+    display: none;
+
+}
+nav ul{
+    display: flex;
+}
+
+@media only screen and (max-width: 1100px) {
+    header{
+        width: 90%;
+        padding: 0 20px;
+    }
+    nav{
+        position: absolute;
+        left: -300px;
+        top: 0;
+        z-index: 999;
+        width: 280px;
+        height: 100vh;
+        background-color: #fefefe;
+        transition: 0.2s;
+        box-shadow: 2px 0 20px 0 rgb(0, 0, 0, 0.05);
+    }
+    #nav_check:checked ~ nav{
+        left: 0;
+    }
+    nav .logo {
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+    nav ul{
+        display: block;
+        padding: 0 93px;
+        text-align: center;
+        margin-top: 430px;
+    }
+    
+}
+
+
+/* -- Content Inside Home Page */
+
+.content
+{
+  text-align: center;
+  color: white;
+  padding-top: 123px;
+}
+.content1
+{
+  font-family:'Oooh Baby' , cursive;
+  font-size: 105px;  
+}
+.content2
+{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 22px;
+}
+@media only screen and (max-width: 1100px)
+{
+    .content1
+    {
+        padding-top: 260px;
+    }
+}
+
+/* -- Go to Top -- */
+
+.top{
+
+    --offset: 70px; 
+    
+    position: sticky;
+    bottom: 20px;
+    left: 47%;      
+    margin-right:10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #0077b6;
+    border-radius: 100px;
+    white-space: nowrap;
+}
+
+/* -- Footer -- */
+
+
+.footer
+{
+	text-align: center;
+	margin-top: 5%;
+	background-color: #03045E;
+	color: white;
+	border-radius: 220px 220px 0 0;
+}
+
+.footer1
+{
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+}
+.footer2
+{
+  font-family:'Oooh Baby' , cursive;
+  font-size: 30px;  
+}
+.footer3
+{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 16px;
+}
+
+.socials
+{
+	margin: -10px;
+    padding: 20px;
+	text-align: center;
+}
+.socials img
+{
+	width: 35px;
+	color: whitesmoke;
+	margin-left: 2%;
+}
+.copyright
+{
+	margin-top: 22px;
+	text-align: center;
+}
+
+.copyright h4
+{ 
+    font-size: 10px;
+    font-family: 'Kanit', sans-serif;
+	padding:20px ;
+}
+
+@media screen and (max-width:1200px) {
+    .footer{
+        text-align: center;
+    }
+    .socials img
+    {
+        width: 30px;
+    }
+}

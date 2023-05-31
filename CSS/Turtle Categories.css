@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oooh+Baby&family=Zeyada&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.backgrounding
+{
+
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Image/Turtle\ Cetogies\ Backgroud\ Img.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ /* --  Main Paragraph-- */
+
+.mainpara
+{
+    padding: 35px 20px;
+    text-align: center;
+    margin: 15px 40px;
+}
+
+ /* --  Turtle Categories-- */
+
+.cate-head h1
+{
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular";
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 22px;
+}
+
+.cate-img
+{
+    text-align: center;
+}
+
+.cate-para
+{
+    text-align: center;
+    font-size: 17px;
+    padding: 20px ;
+    margin: 0px 50px;
+}
+
+.cate-map
+{
+    text-align: center;
+    padding: 20px;
+}
+
+ /* --  Turtle Categories Summary Table-- */
+.main
+{
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+main.table 
+{
+    width: auto;
+    height: 90vh;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+    background: url(../Image/Table\ \ background.jpg) center / cover;
+    padding-bottom: 10px
+}
+.table_head 
+{
+    width: 95%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.table_head h1
+{
+    text-transform: uppercase;
+    font-family: "Montserrat-Regular";
+    text-align: center;
+    font-size: 29px;
+}
+.table_head .table_search 
+{
+    width: 35%;
+    height: 100%;
+    background-color: #fff5;
+    padding: 0 .8rem;
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.table_head .table_search:hover 
+{
+    width: 45%;
+    background-color: #fff8;
+    box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table_head .table_search img 
+{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.table_head .table_search input 
+{
+    width: 100%;
+    padding: 0 .5rem 0 .3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.table_body 
+{
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+    overflow: overlay;
+}
+.table_body::-webkit-scrollbar
+{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb
+{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb
+{ 
+    visibility: visible;
+}
+table 
+{
+    width: 100%;
+}
+td img 
+{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+table, th, td 
+{
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th 
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr.hide {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+tbody tr:hover {
+    background-color: #fff6 !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+tbody tr.hide td,
+tbody tr.hide td p {
+    padding: 0;
+    font: 0 / 0 sans-serif;
+    transition: .2s ease-in-out .5s;
+}
+
+tbody tr.hide td img {
+    width: 0;
+    height: 0;
+    transition: .2s ease-in-out .5s;
+}
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+thead th tfoot th:hover {
+    color: #00B4D8;
+}
+thead th.active,tbody td.active tfoot th {
+    color: #00B4D8;
+}
+thead th.active span.icon-arrow{
+    background-color: #00B4D8;
+    color: #fff;
+}
+tfoot th 
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    cursor: pointer;
+    text-transform: capitalize;
+    text-align: center;
+}
